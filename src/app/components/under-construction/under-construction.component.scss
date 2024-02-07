@@ -1,0 +1,24 @@
+$constructionIconSize: 200px;
+
+section.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 101;
+
+  p {
+    width: 60%;
+    line-height: 2;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  mat-icon[fontIcon="construction"] {
+    font-size: $constructionIconSize;
+    width: $constructionIconSize;
+    height: $constructionIconSize;
+  }
+}

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { inject } from '@vercel/analytics';
 import { injectSpeedInsights } from '@vercel/speed-insights';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { injectSpeedInsights } from '@vercel/speed-insights';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'lemossuk';
+  readonly underConstruction = environment.underConstruction;
 
   constructor() {
     inject();
